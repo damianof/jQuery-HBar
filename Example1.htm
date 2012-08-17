@@ -19,16 +19,18 @@
 	<script type="text/javascript" src="jQuery/Addins/jquery-hbar.js"></script>
 	
     <script type="text/javascript">
-		var _displayValue = true, _centerAligned = true;
+		var _displayValue = true, _centerAligned = false;
 		
     	$(function () {
-		
-			$('#chkDisplayValue').click(function(t){
+			var chkDisplayValue = $('#chkDisplayValue');
+			var chkCenterAligned = $('#chkCenterAligned');
+			
+			chkDisplayValue.change(function(t){
 				_displayValue = $(this).is(':checked');
 				UpdateTable();
 			});
 			
-			$('#chkCenterAligned').click(function(t){
+			chkCenterAligned.change(function(t){
 				_centerAligned = $(this).is(':checked');
 				UpdateTable();
 			});
@@ -56,9 +58,9 @@
 				<div class="ui-widget">
 					<div class="ui-widget-header" style="padding:5px">jQuery-HBar Example1</div>
 					<div class="ui-widget-content" style="padding:5px;height:100%">
-						<input id="chkDisplayValue" type="checkbox" checked="checked" style="cursor:pointer"/><label for="chkDisplayValue" style="cursor:pointer">Display Value</span>
+						<input id="chkDisplayValue" type="checkbox" checked="checked" style="cursor:pointer"/><label for="chkDisplayValue" style="cursor:pointer">Display Value</label>
 						<br/>
-						<input id="chkCenterAligned" type="checkbox" checked="checked" style="cursor:pointer"/><label for="chkCenterAligned" style="cursor:pointer">Center Aligned</span>
+						<input id="chkCenterAligned" type="checkbox" style="cursor:pointer"/><label for="chkCenterAligned" style="cursor:pointer">Center Aligned</label>
 					</div>
 				</div>
 	        </div>
