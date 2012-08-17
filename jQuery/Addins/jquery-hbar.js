@@ -67,8 +67,8 @@
 
 			var barscontainer = $('<div style=""></div>');
 
-			var barValue = $('<div style="z-index:121;float:' + float + ';background-color:' + bgcolor + ';width:' + tempRelValue + 'px;border:solid 1px #CCC" title="' + options.value + '"><img src="/Images/hbar-mask.png" alt="value" width="' + tempRelValue + '" height="' + options.height + '" title="' + options.value + '"/><div>');
-			var barFiller = $('<div style="z-index:122;float:' + float + ';width:' + halfWidth + 'px" title="' + options.value + '"><img src="/Images/hbar-mask.png" alt="value" width="' + halfWidth + '" height="' + options.height + '" title="' + options.value + '"/><div>');
+			var barValue = $('<div style="z-index:121;float:' + float + ';background-color:' + bgcolor + ';width:' + tempRelValue + 'px;border:solid 1px #CCC" title="' + options.value + '"><img src="Images/hbar-mask.png" alt="value" width="' + tempRelValue + '" height="' + options.height + '" title="' + options.value + '"/><div>');
+			var barFiller = $('<div style="z-index:122;float:' + float + ';width:' + halfWidth + 'px" title="' + options.value + '"><img src="Images/hbar-mask.png" alt="value" width="' + halfWidth + '" height="' + options.height + '" title="' + options.value + '"/><div>');
 
 			if (numValue != 0) {
 				if (options.centerAligned) {
@@ -79,7 +79,7 @@
 			}
 
 			if (displayValue) {
-				var text = $('<div title="' + options.value + '" style="z-index:123;position:absolute;background:url(/Images/hbar-mask.png);right:0px;display:table-cell;width:100%;height:' + options.height + 'px;font-weight:bold;border:solid 0px #EEE;text-align:right;float:right">' + options.value + '</div>');
+				var text = $('<div title="' + options.value + '" style="z-index:123;position:absolute;background:url(~/Images/hbar-mask.png);right:0px;display:table-cell;width:100%;height:' + options.height + 'px;font-weight:bold;border:solid 0px #EEE;text-align:right;float:right">' + options.value + '</div>');
 				container.append(text);
 			}
 		}
