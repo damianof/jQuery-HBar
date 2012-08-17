@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="CSS/Main.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/Grid.css" />
+    <link type="text/css" rel="stylesheet" href="jQuery/CSS/smoothness/jquery-ui-1.8.5.core.css" />
+    <link type="text/css" rel="stylesheet" href="jQuery/CSS/jquery-ui-1.8.16.widgets.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/Example1.css" />
+	
+    <script type="text/javascript" src="jQuery/Core/javascript-helpers.js"></script>
+	<script type="text/javascript" src="jQuery/Core/jquery-1.6.3.min.js"></script>
+    <script type="text/javascript" src="jQuery/Core/jquery-ajaxhelpers.js"></script>
+	<script type="text/javascript" src="jQuery/Core/jquery-ui-1.8.16.core.min.js"></script>
+	<script type="text/javascript" src="jQuery/Core/jquery-ui-1.8.16.interactions.min.js"></script>
+	<script type="text/javascript" src="jQuery/Core/jquery-ui-1.8.16.widgets.min.js"></script>
+	
+	<script type="text/javascript" src="jQuery/Addins/jquery-jtemplates.js"></script>
+	<script type="text/javascript" src="jQuery/Addins/jquery-hbar.js"></script>
+	
+    <script type="text/javascript">
+		var _displayValue = true, _centerAligned = true;
+		
+    	$(function () {
+		
+			$('#chkDisplayValue').click(function(t){
+				_displayValue = $(this).is(':checked');
+				UpdateTable();
+			});
+			
+			$('#chkCenterAligned').click(function(t){
+				_centerAligned = $(this).is(':checked');
+				UpdateTable();
+			});
+			
+			LoadExample1();
+    	});
+
+    	function LoadExample1() {
+    		//SafeLog('GetData ');
+    		$.getScript('jQuery/Templates/Example1Template.js?' + Math.random(), function () {
+    			//SafeLog('Example1.js loaded');
+    		});
+
+    		return false;
+    	}
+
+    </script>
+</head>
+<body>
+    <div style="height:auto;min-height:100%">
+
+        <div class="row" style="min-height:100%;margin-top:20px">
+			
+			<div class="column grid_5" style="min-height: 100%">
+				<div class="ui-widget">
+					<div class="ui-widget-header" style="padding:5px">jQuery-HBar Example1</div>
+					<div class="ui-widget-content" style="padding:5px;height:100%">
+						<input id="chkDisplayValue" type="checkbox" checked="checked" style="cursor:pointer"/><label for="chkDisplayValue" style="cursor:pointer">Display Value</span>
+						<br/>
+						<input id="chkCenterAligned" type="checkbox" checked="checked" style="cursor:pointer"/><label for="chkCenterAligned" style="cursor:pointer">Center Aligned</span>
+					</div>
+				</div>
+	        </div>
+			
+			<div class="column grid_10" style="min-height: 100%">
+				<div class="ui-widget">
+					<div class="ui-widget-content" style="padding:5px;height:100%">
+					
+						<div id="divTable"></div>
+						
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</body>
+</html>

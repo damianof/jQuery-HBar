@@ -1,0 +1,25 @@
+﻿.grid_1 { width:60px; }
+.grid_2 { width:124px; }
+.grid_3 { width:188px; }
+.grid_4 { width:252px; }
+.grid_5 { width:316px; }
+.grid_6 { width:380px; }
+.grid_7 { width:444px; }
+.grid_8 { width:508px; }
+.grid_9 { width:572px; }
+.grid_10 { width:636px; }
+.grid_11 { width:700px; }
+.grid_12 { width:764px; }
+.grid_13 { width:828px; }
+.grid_14 { width:892px; }
+.grid_15 { width:956px; }
+
+.column { /* 10px margin on BOTH sides, resulting in a 20px gutter between columns */
+    margin: 0px 2px 8px 2px;
+	overflow: hidden;
+	float: left;
+	display: inline; /* ie6 double-margin bug fix */
+}
+.row { /* center the row on the page, clear the interior contents with overflow:hidden hack */
+	clear:both;width: 960px; margin: 0 auto; overflow: hidden;
+}

@@ -1,0 +1,74 @@
+﻿html, body { padding: 0px; margin: 0px; width: 100%; height: 100%; font-family: Calibri, Verdana, Lucida Sans, Arial;}
+
+h2
+{
+	margin: 5px 1px 1px 1px
+}
+
+h3
+{
+	margin: 2px 1px 1px 1px
+}
+
+.awhite
+{
+	color:White
+}
+
+.awhite:hover
+{
+	background-color:White;
+	color:Blue;
+}
+
+.ui-autocomplete 
+{
+	max-height: 150px;
+	overflow-y: auto;
+}
+
+.ui-autocomplete *
+{
+	font-size:10pt;
+}
+
+.ui-autocomplete-input { height:18px; cursor:pointer; padding:4px }
+.ui-autocompletecombo-input { height:18px; cursor:pointer; padding:4px; border-right:0 }
+.ui-autocompletecombo-button { height:28px; cursor:pointer; padding:0 }
+
+.tabCount { background-image:url(/Images/loaderTabCount.gif); width:12px;height:12px; margin-left:20px; font-size:8pt; border: solid 0px green; }
+
+/* tooltip */
+.tooltip 
+{
+	z-index:997;
+	border:solid 0px Green;
+	/*background:transparent url(/App_themes/Images/Untitled3big.png) no-repeat;*/
+	font-size:10pt;
+	width:500px;
+	color:White;	
+}
+
+.tooltip .background
+{
+	z-index:999;
+	border:solid 0px red;
+	vertical-align:top;
+	min-height:100px;
+}
+
+.tooltip .text
+{
+	color:White;
+	z-index:998;
+	position:absolute;
+	top:12px;
+	left:17px; 
+	width:450px;
+	padding: 0px 5px 0px 10px;
+	margin: 5px 0 5px 0;
+	vertical-align:top;
+	min-height:100px;
+	border:solid 0px yellow;
+	/*color:Orange;*/
+}

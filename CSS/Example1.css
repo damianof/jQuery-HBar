@@ -1,0 +1,32 @@
+﻿.example1 {
+    font-size: 11pt;
+    font-family: Calibri, Verdana, Lucida Sans, Arial;
+}
+
+.example1.table {
+    border:solid 0px #4F81BD;
+}
+
+.example1.table.header, 
+.example1.table.headerLast {
+    border:solid 1px #4F81BD;
+    color:white;
+    background-color:#4F81BD;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.example1.table.header {
+    border-right:0;
+}
+
+.example1.table.cell,
+.example1.table.cellLast {
+    border:solid 1px #4F81BD;
+    border-top:0;
+    text-align:right;
+}
+
+.example1.table.cell {
+    border-right:0;
+}
